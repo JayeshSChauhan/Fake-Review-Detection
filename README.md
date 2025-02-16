@@ -17,7 +17,6 @@ This project is a **Fake Review Detection System** that analyzes Amazon product 
 │-- Preprocessing.py     # Text preprocessing functions
 │-- templates/
 │   └── index.html       # Web interface
-│-- static/              # CSS, JavaScript files (if any)
 │-- best_model.pkl       # Trained ML model
 │-- tfidf_vectorizer.pkl # TF-IDF vectorizer
 │-- requirements.txt     # Dependencies
