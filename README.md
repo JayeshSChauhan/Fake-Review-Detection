@@ -11,7 +11,7 @@ This project is a **Fake Review Detection System** that analyzes Amazon product 
 
 ## **Project Architecture**
 ```
-📂 Fake-Review-Detection
+📂 
 │-- app.py               # Flask backend
 │-- Scapper.py           # Amazon review scraper
 │-- Preprocessing.py     # Text preprocessing functions
@@ -30,7 +30,7 @@ This project is a **Fake Review Detection System** that analyzes Amazon product 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Scraping**: BeautifulSoup  
 - **Preprocessing**: NLTK, spaCy  
-- **Machine Learning**: Scikit-learn, Logistic Regression  
+- **Machine Learning**: Scikit-learn, SGD Regression  
 - **Model Deployment**: Flask API  
 
 ## **Setup & Installation**
@@ -50,12 +50,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### **4. Access the Website**
-Open your browser and go to:
-```
-http://127.0.0.1:5000/
-```
-
 ## **How It Works**
 1. **User enters an Amazon product URL** on the web interface.
 2. **The scraper extracts reviews** from the given product page.
@@ -68,15 +62,6 @@ http://127.0.0.1:5000/
 - **JSON Response**: The API returns review predictions.
 - **Web Interface**: Results are shown with real/fake labels.
 
-## **Example Output**
-```
-Review: "This product is amazing! Highly recommend."
-Prediction: Real
-
-Review: "Best product ever!! Buy now!!! So good!!!"
-Prediction: Fake
-```
-
 ## **Contributing**
 Feel free to fork this project and contribute! 🚀
 
@@ -85,4 +70,4 @@ This project is open-source and free to use.
 
 ---
 
-🔥 **Start detecting fake reviews now at `http://127.0.0.1:5000/`**  
+**Jayesh Chauhan**  
