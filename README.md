@@ -59,8 +59,10 @@ python app.py
 
 ## **Outputs**
 - **CSV File**: Extracted reviews are saved in `Amazon_Reviews.csv`.
-- **JSON Response**: The API returns review predictions.
 - **Web Interface**: Results are shown with real/fake labels.
+  
+  ![image](https://github.com/user-attachments/assets/ebbf1b42-d69a-44ee-aefa-079c3a1cf891)
+  ![image](https://github.com/user-attachments/assets/2fc2be4f-6f59-4048-a85a-a7d0835c10c3)
 
 ## **Contributing**
 Feel free to fork this project and contribute! 🚀
