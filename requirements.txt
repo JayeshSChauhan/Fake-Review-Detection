@@ -1,0 +1,15 @@
+Flask
+flask-cors
+requests
+beautifulsoup4
+pandas
+scikit-learn
+nltk
+spacy
+joblib
+pickle-mixin
+googletrans==4.0.0-rc1
+emoji
+langdetect
+fasttext
+lightgbm
