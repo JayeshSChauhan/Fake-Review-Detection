@@ -6,7 +6,7 @@ This project is a **Fake Review Detection System** that analyzes Amazon product 
 1. **User Input**: The user provides an Amazon product URL.
 2. **Scraping**: The system scrapes product reviews from Amazon using `Scapper.py`.
 3. **Preprocessing**: The reviews are cleaned and transformed using `Preprocessing.py`.
-4. **Model Prediction**: A trained **Logistic Regression model** (`best_model.pkl`) predicts whether each review is fake or real.
+4. **Model Prediction**: A trained **SGD Regression model** (`best_model.pkl`) predicts whether each review is fake or real.
 5. **Web Interface**: Users interact with the system via a Flask-powered website (`index.html`).
 
 ## **Project Architecture**
