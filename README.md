@@ -1,74 +1,68 @@
 # Fake Review Detection System
 
-This project is a **Fake Review Detection System** that analyzes Amazon product reviews and classifies them as **real** or **fake** using Machine Learning.
+## Overview
+This project is a Fake Review Detection System that identifies whether Amazon product reviews are real or fake. It uses web scraping, text preprocessing, and a machine learning model (SVM) to classify reviews.
 
-## **Project Overview**
-1. **User Input**: The user provides an Amazon product URL.
-2. **Scraping**: The system scrapes product reviews from Amazon using `Scapper.py`.
-3. **Preprocessing**: The reviews are cleaned and transformed using `Preprocessing.py`.
-4. **Model Prediction**: A trained **SGD Regression model** (`best_model.pkl`) predicts whether each review is fake or real.
-5. **Web Interface**: Users interact with the system via a Flask-powered website (`index.html`).
+## Features
+- **Web Scraping:** Extracts reviews from Amazon product pages.
+- **Text Preprocessing:** Cleans and processes review text for better model accuracy.
+- **Machine Learning Model:** Uses an SVM model to classify reviews.
+- **Flask Web App:** Provides a user interface for users to check reviews.
 
-## **Project Architecture**
+## Project Structure
 ```
-📂 
-│-- app.py               # Flask backend
-│-- Scapper.py           # Amazon review scraper
-│-- Preprocessing.py     # Text preprocessing functions
-│-- templates/
-│   └── index.html       # Web interface
-│-- best_model.pkl       # Trained ML model
-│-- tfidf_vectorizer.pkl # TF-IDF vectorizer
-│-- requirements.txt     # Dependencies
-│-- README.md            # Project documentation
-```
-
-## **Technologies Used**
-- **Programming Language**: Python  
-- **Web Framework**: Flask  
-- **Frontend**: HTML, CSS, JavaScript  
-- **Scraping**: BeautifulSoup  
-- **Preprocessing**: NLTK, spaCy  
-- **Machine Learning**: Scikit-learn, SGD Regression  
-- **Model Deployment**: Flask API  
-
-## **Setup & Installation**
-### **1. Clone the Repository**
-```sh
-git clone https://github.com/your-repository/fake-review-detection.git
-cd fake-review-detection
+├── app.py                  # Flask API to handle requests
+├── model.py                # Loads and applies the SVM model
+├── preprocessing.py        # Cleans and processes review text
+├── scraper.py              # Scrapes reviews from Amazon
+├── SVM_model.pkl           # Trained machine learning model
+├── word2vec_model.model    # Word embeddings for text processing
+├── static/
+│   ├── script.js           # JavaScript for frontend interactions
+│   ├── style.css           # Styling for the frontend
+├── templates/
+│   ├── index.html          # Frontend UI
+├── requirements.txt        # Required Python dependencies
+├── README.md               # Project documentation
 ```
 
-### **2. Install Dependencies**
-```sh
-pip install -r requirements.txt
+## Installation
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/JayeshSChauhan/Fake-Review-Detection.git
+   cd Fake-Review-Detection
+   ```
+2. **Create a virtual environment:**
+   ```sh
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
+   ```
+3. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Usage
+1. **Run the Flask application:**
+   ```sh
+   python app.py
+   ```
+2. **Open in browser:**
+   ```
+   http://127.0.0.1:5000
+   ```
+3. **Enter an Amazon product URL** to analyze reviews.
+
+## Dependencies
+```
+Flask
+BeautifulSoup4
+scikit-learn
+nltk
+requests
+word2vec
+numpy
+pandas
 ```
 
-### **3. Run the Flask App**
-```sh
-python app.py
-```
-
-## **How It Works**
-1. **User enters an Amazon product URL** on the web interface.
-2. **The scraper extracts reviews** from the given product page.
-3. **Preprocessing removes noise** (e.g., HTML tags, emojis, stopwords, etc.).
-4. **Machine Learning model predicts** whether the reviews are fake or real.
-5. **Results are displayed** on the web interface.
-
-## **Outputs**
-- **CSV File**: Extracted reviews are saved in `Amazon_Reviews.csv`.
-- **Web Interface**: Results are shown with real/fake labels.
-  
-  ![image](https://github.com/user-attachments/assets/ebbf1b42-d69a-44ee-aefa-079c3a1cf891)
-  ![image](https://github.com/user-attachments/assets/2fc2be4f-6f59-4048-a85a-a7d0835c10c3)
-
-## **Contributing**
-Feel free to fork this project and contribute! 🚀
-
-## **License**
-This project is open-source and free to use.
-
----
-
-**Jayesh Chauhan**  
+**Jayesh S Chauhan**
