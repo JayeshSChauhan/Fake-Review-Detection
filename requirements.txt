@@ -6,3 +6,4 @@ requests
 word2vec
 numpy
 pandas
+langdetect
