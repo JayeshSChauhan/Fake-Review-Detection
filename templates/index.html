@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Review Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🧑‍💻 Fake Review Detection 🧑‍💻</h1>
+        <p>Analyze Amazon product reviews<br>and<br>check if they are real (original) or fake (computer generated)</p>
+        <input type="text" id="url" placeholder="Enter Product URL">
+        <button onclick="analyzeReviews()">Analyze Reviews</button>
+        <div id="loading" style="display: none;">🔍 Fetching and Analyzing Reviews...</div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
