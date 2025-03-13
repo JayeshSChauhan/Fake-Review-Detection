@@ -2,7 +2,9 @@ from flask import Flask, render_template, request, jsonify
 from scraper import scrape_reviews
 from model import load_models, classify_reviews
 from preprocessing import preprocess_text
-import pandas as pd 
+import pandas as pd
+import os
+
 
 app = Flask(__name__)
 
@@ -49,4 +51,5 @@ def analyze():
     return jsonify(result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get the Render-assigned port
+    app.run(host='0.0.0.0', port=port, debug=True)
