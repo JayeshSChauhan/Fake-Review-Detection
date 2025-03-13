@@ -1,15 +1,15 @@
-# Fake Review Detection System
+# 🕵️ Fake Review Detection System
 
 ## Overview
 This project is a Fake Review Detection System that identifies whether Amazon product reviews are real or fake. It uses web scraping, text preprocessing, and a machine learning model (SVM) to classify reviews.
 
-## Features
+## 🎯 Features
 - **Web Scraping:** Extracts reviews from Amazon product pages.
 - **Text Preprocessing:** Cleans and processes review text for better model accuracy.
 - **Machine Learning Model:** Uses an SVM model to classify reviews.
 - **Flask Web App:** Provides a user interface for users to check reviews.
 
-## Project Structure
+## 📂 Project Structure
 ```
 ├── app.py                  # Flask API to handle requests
 ├── model.py                # Loads and applies the SVM model
@@ -42,7 +42,7 @@ This project is a Fake Review Detection System that identifies whether Amazon pr
    pip install -r requirements.txt
    ```
 
-## Usage
+## 🛠️ Usage
 1. **Run the Flask application:**
    ```sh
    python app.py
@@ -64,5 +64,7 @@ word2vec
 numpy
 pandas
 ```
+## 🌐 Explore the Project
+📺 YouTube Demo: [https://youtu.be/3YEDY1okU1A](https://youtu.be/3YEDY1okU1A)
 
-**Jayesh S Chauhan**
+## Jayesh S Chauhan
