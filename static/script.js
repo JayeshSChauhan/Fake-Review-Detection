@@ -11,7 +11,12 @@ function analyzeReviews() {
     resultDiv.innerHTML = "";
     loadingDiv.style.display = "block";
 
-    fetch("/analyze", {
+    // fetch("/analyze", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({ url: url })
+    // })
+    fetch("https://fake-review-detection-l3t8.onrender.com/analyze", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: url })
