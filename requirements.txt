@@ -9,3 +9,5 @@ pandas
 langdetect
 gensim
 emoji
+joblib
+textblob
