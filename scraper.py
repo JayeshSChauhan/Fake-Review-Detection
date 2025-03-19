@@ -42,7 +42,6 @@ def scrape_reviews(url):
                 print(f"Language detection failed for a review: {lang_err}")
                 continue  
 
-        
         if reviews:
             df = pd.DataFrame(reviews)
             return df
