@@ -18,29 +18,22 @@ def correct_spelling(r):
 
 # Function for lemmatization, stemming, and stopword removal
 def lemmatize_and_stem(r):
-    
     words = word_tokenize(r)
-    
     stop_words = set(stopwords.words('english'))
     words = [word for word in words if word not in stop_words]
-    
     lemmatized_words = [lemmatizer.lemmatize(word) for word in words]
     stemmed_words = [stemmer.stem(word) for word in words]
-    
     r = ' '.join(lemmatized_words)  
     r = ' '.join(stemmed_words)   
-
     return r
 
 def preprocess_text(r):
     r = str(r).lower().strip()
-
     r = r.replace('%', ' percent')
     r = r.replace('$', ' dollar ')
     r = r.replace('₹', ' rupee ')
     r = r.replace('€', ' euro ')
     r = r.replace('@', ' at ')
-
     r = r.replace(',000,000,000 ', 'b ')
     r = r.replace(',000,000 ', 'm ')
     r = r.replace(',000 ', 'k ')
