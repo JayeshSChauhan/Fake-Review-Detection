@@ -5,7 +5,6 @@ from preprocessing import preprocess_text
 import pandas as pd
 import os
 
-
 app = Flask(__name__)
 
 # Load models
